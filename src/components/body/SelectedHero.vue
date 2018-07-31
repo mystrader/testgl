@@ -12,26 +12,12 @@
 
         <p class="cryptoCurrency-description" :class="{'cryptoCurrency-description-iframe': isOpenedInIFrame}">{{ selectedCryptoCurrency.description }}</p>
 
-      </div>
-      <div class="column information-section" :class="{'information-section-iframe': isOpenedInIFrame}">
-        <div class="dropdown-section hide" :class="{'show': isOpenedInIFrame}">
-          <div class="control">
-            <button class="button" type="button" @click="toggleDropDown">
-              {{ selectedFiatCurrency }}
-              <span class="arrow-icon">
-                <icon v-if="!dropDownOpen" name="caret-down" height="13"></icon>
-                <icon v-if="dropDownOpen" name="caret-up" height="13"></icon>
-              </span>
-            </button>
+        <button class="button" type="button" @click="toggleDropDown">
+            Confirmar Voto
+        </button>
 
-            <div class="box dropdown" :class="{'is-open': dropDownOpen, 'transparent': isOpenedInIFrame}">
-              <ul>
-                <li v-for="fiatCurrency in fiatCurrencies"><a class="nav-item" :class="{'font-white': isOpenedInIFrame}"@click="selectFiatCurrency(fiatCurrency)">{{ fiatCurrency }}</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
       </div>
+
     </div>
 </template>
 
@@ -176,20 +162,7 @@ $large: 1024px;
 
     .cryptoCurrency-image {
       height: 200px;
-
-      -webkit-animation-name: spinner;
-      -webkit-animation-timing-function: linear;
-      -webkit-animation-iteration-count: infinite;
-      -webkit-animation-duration: 60s;
-      animation-name: spinner;
-      animation-timing-function: linear;
-      animation-iteration-count: 1;
-      animation-duration: 60s;
-      -webkit-transform-style: preserve-3d;
-      -moz-transform-style: preserve-3d;
-      -ms-transform-style: preserve-3d;
-      transform-style: preserve-3d;
-    }
+      }
 
     .cryptoCurrency-image-iframe {
       height: 80px;

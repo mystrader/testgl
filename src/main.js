@@ -17,7 +17,7 @@ Vue.component('doughnut-chart', DoughnutChart)
 
 Vue.config.productionTip = false
 
-/* eslint-disable no-new */
+/* eslint-disable  */
 new Vue({
   el: '#app',
   router: router,

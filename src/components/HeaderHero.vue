@@ -74,7 +74,9 @@ $medium: 768px;
 $large: 1024px;
 
 h1{
-  font-size: 2.2rem;
+  font-size: 2.8rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
   margin: 2rem 0px;
 }
 
