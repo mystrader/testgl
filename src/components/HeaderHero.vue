@@ -4,36 +4,14 @@
       <div class="container">
         <div class="nav-left">
           <router-link to="/" class="nav-item" :class="{'hide': isOpenedInIFrame}">
-            <img src="/static/app-logo.png" class="app-logo" />
-            <!--p class="app-logo-name">Crypto<span>Vue</span></p-->
+            <!--img src="/static/app-logo.png" class="app-logo" /-->
+            <!--p class="app-logo-name">teste<span>Cunha</span></p-->
           </router-link>
         </div>
       </div>
     </header>
-
     <h1>Votação Personagem do Carnaval Carioca</h1>
-    <div class="modal" :class="{'is-active': modalActive}">
-      <div class="modal-background" @click="toggleModal"></div>
-        <div class="modal-card">
-          <header class="modal-card-head"></header>
-          <section class="modal-card-body">
-            <div class="content">
-              <h3> CryptoVue </h3>
-              <img src="/static/app-logo.png" class="modal-body-logo" id="app-logo"/>
-              <p>Cryptocurrencies emerged in 2009 with the first decentralized cryptocurrency - <a href="https://bitcoin.org/en/" target="_blank">Bitcoin</a>. As of today - more than 700 digital currencies exist with a total market capitalization greater than 100 billion USD. </p>
-              <p><a target="_blank">CryptoVue</a> is a real-time dashboard that displays the top 10 cryptocurrencies based on currency price, market capitalization and overall circulating supply - obtained from the leading cryptocurrency resource <a href="https://coinmarketcap.com/" target="_blank">CoinMarketCap</a>.</p>
-              <h3>Vue</h3>
-              <img src="/static/vue_logo.png" class="modal-body-logo" id="vue-logo" />
-              <p>Built as a weekend project, this was a great introduction in  understanding the common concepts of <a href="https://vuejs.org/" target="_blank">Vue</a> (reusable single-file components, vue-router, templating, etc.). </p>
-              <p style="padding-bottom: 10px">Styling of the application was done with <a href="http://bulma.io/" target="_blank">Bulma</a> (Flexbox based CSS framework) and SASS. Head over to the my <a href="https://github.com/djirdehh/crypto_vue" target="_blank">github page</a> to see the entire scaffold and feel free to reach out with any comments/questions!</p>
-            </div>
-          </section>
-          <footer class="modal-card-foot">
-
-          </footer>
-          <button class="modal-close is-medium" @click="toggleModal"></button>
-        </div>
-    </div>
+   
   </div>
 </template>
 

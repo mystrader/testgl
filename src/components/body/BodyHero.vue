@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="columns" style="margin: 0px 10px">
-      <div v-for="cryptoCurrency in firstFiveCryptoCurrencies" class="column">
+      <div v-for="cryptoCurrency in firstFiveCryptoCurrencies"  class="column">
         <router-link :to="`/${cryptoCurrency.id}`">
-          <div class="card">
+          <div class="card" >
             <div class="card-image" :class="{'card-image-iframe': isOpenedInIFrame}">
               <figure class="image is-4by3">
                 <img :src="`/static/${cryptoCurrency.id}_logo.png`">
@@ -26,7 +26,7 @@
               </figure>
             </div>
             <div class="card-content">
-              <p class="title is-5" :class="{'title-iframe': isOpenedInIFrame}">{{ cryptoCurrency.name }}</p>
+              <p class="title is-5" :class="{'title-iframe': isOpenedInIFrame}"> Personagem {{ cryptoCurrency.name }}</p>
             </div>
           </div>
         </router-link>
@@ -37,7 +37,6 @@
 
 <script>
 import { store } from '../../store.js'
-
 export default {
   props: {},
   name: 'bodyHero',
@@ -61,17 +60,7 @@ export default {
     }
   },
   methods: {
-    getDifferenceInChange (cryptoCurrency) {
-      cryptoCurrency.positivePercentChange = !(cryptoCurrency.percent_change_24h.indexOf('-') > -1)
-      cryptoCurrency.percentChange24h = cryptoCurrency.percent_change_24h.replace(/^-/, '')
-    },
-    getPriceUSD (cryptoCurrency) {
-      const priceUsd = cryptoCurrency.price_usd
-      return Number(priceUsd).toFixed(2)
-    },
-    getPercentChange (cryptoCurrency) {
-      return cryptoCurrency.percentChange24h
-    }
+
   }
 }
 </script>

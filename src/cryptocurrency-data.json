@@ -1,216 +1,216 @@
 {
    "bitcoin": {
-      "name-person": "Colombina",
+      "nameperson": "Colombina",
       "description": "Uma criada de quarto esperta, sedutora e volúvel, amante de Arlequim, as vezes vestia-se como Arlequina em trajes de cores variadas, como as de seu amante.",
-      "website": "https://bitcoin.org/en/",
+      "website": "Colombina",
       "paper": "https://bitcoin.org/bitcoin.pdf",
       "github": "https://github.com/bitcoin"
    },
    "bitcoin-cash": {
-     "name-person": "Arlequim",
+     "nameperson": "Arlequim",
       "description": "Rival de Pierrô pelo amor de Colombina, usava traje confeccionado a partir de retalhos triangulares de diversas cores. Figura que representava o palhaço, o farsante, o cômico.",
-      "website": "",
+      "website": "Arlequim",
       "paper": "",
       "github": ""
    },
    "bitcoin-gold": {
-     "name-person": "Pierrô",
+     "nameperson": "Pierrô",
       "description": "Personagem sentimental, tendo como principal característica a ingenuidade.",
-      "website": "https://bitcoingold.org/",
+      "website": "Pierrô",
       "paper": "",
       "github": "https://github.com/BTCGPU/BTCGPU"
    },
    "ethereum": {
-     "name-person": "Capitano (capitão)",
+     "nameperson": "Capitano (capitão)",
       "description": "Um covarde que contava as suas proezas no amor e nas batalhas, mas era sempre desmentido. Este personagem procurava satirizar os soldados espanhóis.",
-      "website": "https://www.ethereum.org/",
+      "website": "Capitano (capitão)",
       "paper": "https://github.com/ethereum/wiki/wiki/White-Paper",
       "github": "https://github.com/ethereum"
    },
    "ripple": {
-     "name-person": "Briguela",
+     "nameperson": "Briguela",
       "description": "um empregado correto e fiel, mas cínico e astuto, e rival de Arlequim.",
-      "website": "https://ripple.com/",
+      "website": "Briguela",
       "paper": "https://ripple.com/files/ripple_consensus_whitepaper.pdf",
       "github": "https://github.com/ripple"
    },
    "litecoin": {
-     "name-person": "Pantaleone ou Pantaleão",
+     "nameperson": "Pantaleone ou Pantaleão",
       "description": "um velho comerciante fidalgo, avarento e eternamente enganado.",
-      "website": "https://litecoin.org/",
+      "website": "Pantaleone ou Pantaleão",
       "paper": "",
       "github": "https://github.com/litecoin-project"
    },
    "ethereum-classic": {
-     "name-person": "O Doutor",
+     "nameperson": "O Doutor",
       "description": "visto como o homem intelectual, mas era uma falsa impressão. Ele é o mais velho e rico dos Vecchi, pedante, avarento e sem o menor sucesso com as mulheres.",
-      "website": "https://ethereumclassic.github.io/",
+      "website": "O Doutor",
       "paper": "https://coss.io/documents/white-papers/ethereum-classic.pdf",
       "github": "https://github.com/ethereumclassic"
    },
    "dash": {
-     "name-person": "Pedrolino (Pierrot)",
+     "nameperson": "Pedrolino (Pierrot)",
       "description": "É o servo fiel. Ele é forte, confiável, honesto e devotado a seu mestre. Ele também é charmoso e carismático, traja roupas brancas e folgadas com um lenço no pescoço.",
-      "website": "https://www.dash.org/",
+      "website": "Pedrolino (Pierrot)",
       "paper": "https://www.dash.org/wp-content/uploads/2015/04/Dash-WhitepaperV1.pdf",
       "github": "https://github.com/dashpay"
    },
    "nem": {
-     "name-person": "Coviello",
+     "nameperson": "Coviello",
       "description": "tocava seu bandolim e fazia parodias; podia ser astuto e sagaz, mas também estúpido ou inteligente.",
-      "website": "https://www.nem.io/",
+      "website": "Coviello",
       "paper": "https://www.nem.io/NEM_techRef.pdf",
       "github": "https://github.com/NemProject"
    },
    "iota": {
-     "name-person": "Rei Momo",
-      "description": "Personagem que personifica o Carnaval brasileiro. Sua figura foi inspirada no bufo, ator de procedência portuguesa que representava pequenas comédias teatrais que tanto divertiam os nobres.",
-      "website": "https://iota.org/",
+     "nameperson": "Coviello",
+      "description": "tocava seu bandolim e fazia parodias; podia ser astuto e sagaz, mas também estúpido ou inteligente.",
+      "website": "Coviello",
       "paper": "https://iota.org/IOTA_Whitepaper.pdf",
       "github": "https://github.com/iotaledger"
    },
    "monero": {
-     "name-person": "test",
+     "nameperson": "test",
       "description": "An open-source cryptocurrency that is heavily focused on privacy, decentralisation and scalability. Monero is based on the CryptoNote protocol and has significant algorithmic differences to Bitcoin.",
       "website": "https://getmonero.org/",
       "paper": "",
       "github": "https://github.com/monero-project"
    },
    "eos": {
-     "name-person": "test",
+     "nameperson": "test",
       "description": "Software that introduces a new blockhain architecture designed to enable vertical and horizontal scaling of decentralized applications with the aim of quick and easy deployment, scalability to millions of transactions per second and elimination of user fees.",
       "website": "https://eos.io/",
       "paper": "https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md",
       "github": "https://github.com/EOSIO"
    },
    "stratis": {
-     "name-person": "test",
+     "nameperson": "test",
       "description": "A Blockchain-as-a-service (BaaS) Platform that allows corporations in the financial sector to create their custom blockchain applications with the features they require. Stratis currency (STRAT), the native currency within the platform, will be needed to create and fuel these blockchains.",
       "website": "https://stratisplatform.com/",
       "paper": "https://stratisplatform.com/files/Stratis_Whitepaper.pdf",
       "github": "https://github.com/stratisproject"
    },
    "bitshares": {
-     "name-person": "test",
+     "nameperson": "test",
       "description": "BitShares offers a stack of financial services which include enabling an open, scalable decentralized exchange as well as banking on a blockchain. Built to be fast, efficient and scalable to handle tens of thousands of transactions per second that happen on a decentralized exchange.",
       "website": "https://bitshares.org/",
       "paper": "http://docs.bitshares.org/bitshares/papers/index.html",
       "github": "https://github.com/bitshares"
    },
    "bitconnect": {
-     "name-person": "test",
+     "nameperson": "test",
       "description": "A community driven open-source cryptocurrency that allows BitConnect holders to receive interest due to helping maintain the security of the network.",
       "website": "https://bitconnectcoin.co/",
       "paper": "",
       "github": "https://github.com/bitconnectcoin"
    },
    "tether": {
-     "name-person": "test",
-      "description": "The Tether platform is built on top of open blockchain technologies to allow users to convert fiat cash to digital currency. This is done by tethering the value of the cryptocurrency to the price of national currencies - US Dollar, the Euro and the Yen.",
-      "website": "https://tether.to/",
+     "nameperson": "Rei Momo",
+      "description": "Personagem que personifica o Carnaval brasileiro. Sua figura foi inspirada no bufo, ator de procedência portuguesa que representava pequenas comédias teatrais que tanto divertiam os nobres.",
+      "website": "Rei Momo",
       "paper": "https://bravenewcoin.com/assets/Whitepapers/Tether-White-Paper.pdf",
       "github": ""
    },
    "zcash": {
-     "name-person": "test",
+     "nameperson": "test",
       "description": "The first permissionless cryptocurrency that aims to fully protect the privacy of transactions by hiding the sender, recipient and value on the blockchain.",
       "website": "https://z.cash/",
       "paper": "http://zerocash-project.org/media/pdf/zerocash-extended-20140518.pdf",
       "github": "https://github.com/zcash"
    },
    "neo": {
-     "name-person": "test",
+     "nameperson": "test",
       "description": "China's first original and open-source public blockchain. Initially known as Antshares, Neo aims to support multiple types of digital assets as well as allow users to establish smart contracts to enhance and enrich the functions of said digital assets.",
       "website": "https://neo.org/",
       "paper": "https://github.com/neo-project/neo/wiki/Whitepaper-1.1",
       "github": "https://github.com/neo-project"
    },
    "bytecoin-bcn": {
-     "name-person": "test",
+     "nameperson": "test",
       "description": "Launched in 2012, Bytecoin is an untraceable cryptocurrency that launched in 2012 that offers fee-free instant international payments, secure funds and privacy.",
       "website": "https://bytecoin.org/",
       "paper": "https://cryptonote.org/whitepaper.pdf",
       "github": "https://github.com/amjuarez/bytecoin"
    },
    "veritaseum": {
-     "name-person": "test",
+     "nameperson": "test",
       "description": "A smart contracts-based, peer-to-peer wallet interface (in beta) that currently interacts with Bitcoin blockchain and is to be ported to Ethereum. Veritaseum aims to allow non-technical individuals & entities to quickly create, enter and manage smart contracts directly with others without an authoritative 3rd party.",
       "website": "http://veritas.veritaseum.com/",
       "paper": "",
       "github": "https://github.com/veritaseum"
    },
    "steem": {
-     "name-person": "test",
+     "nameperson": "test",
       "description": "An incentivized, blockchain-based social media platform where users can earn the digital currency (STEEM) by upvoting, posting and sharing content.",
       "website": "https://steem.io/",
       "paper": "https://steem.io/SteemWhitePaper.pdf",
       "github": "https://github.com/steemit"
    },
    "waves": {
-     "name-person": "test",
+     "nameperson": "test",
       "description": "A decentralized blockchain platform focusing on custom blockchain tokens operations where token exchange facilitates fundraising, crowdfunding, and trading of financial instruments on the blockchain.",
       "website": "https://wavesplatform.com/",
       "paper": "https://blog.wavesplatform.com/waves-whitepaper-164dd6ca6a23",
       "github": "https://github.com/wavesplatform/"
    },
    "qtum": {
-     "name-person": "test",
+     "nameperson": "test",
       "description": "The first digital currency that aims to allow Decentralized Applications and Smart Contracts to execute as part of an Unspent Transaction Output (UTXO), using a Proof-of-Stake model.",
       "website": "http://www.qtum.org/",
       "paper": "https://qtum.org/en/white-papers",
       "github": "https://github.com/qtumproject"
    },
    "iconomi": {
-     "name-person": "test",
+     "nameperson": "test",
       "description": "Using Ethereum smart contracts, ICONOMI is a digital assets management platform that aims to provide a simple way for beginners and blockchain experts, to invest and manage their digital assets.",
       "website": "https://www.iconomi.net/",
       "paper": "https://coss.io/documents/white-papers/iconomi.pdf",
       "github": ""
    },
    "gnosis-gno": {
-     "name-person": "test",
+     "nameperson": "test",
       "description": "Based on Ethereum, Gnosis is a decentralized prediction market platform that aims to disrupt some of the largest existing industries (insurance, financial services) in the near future.",
       "website": "https://gnosis.pm/",
       "paper": "https://gnosis.pm/resources/default/pdf/gnosis_whitepaper.pdf",
       "github": "https://github.com/gnosis"
    },
    "status": {
-     "name-person": "test",
+     "nameperson": "test",
       "description": "A modular utility token that fuels the Status network - an open source messaging platform and mobile interface to interact with decentralized applications that run on the Ethereum Network.",
       "website": "https://status.im/",
       "paper": "https://status.im/whitepaper.pdf",
       "github": "https://github.com/status-im"
    },
    "siacoin": {
-     "name-person": "test",
+     "nameperson": "test",
       "description": "Sia is a decentralized cloud storage platform that intends to compete with existing storage solutions, at both the P2P and enterprise level. Peers on Sia rent storage from each other while Sia itself stores only the storage contracts formed between parties.",
       "website": "http://sia.tech/",
       "paper": "https://www.sia.tech/whitepaper.pdf",
       "github": "https://github.com/NebulousLabs/Sia"
    },
    "golem-network-tokens": {
-     "name-person": "test",
+     "nameperson": "test",
       "description": "Golem project aims to create a global, open sourced, decentralized supercomputer in which producers may sell spare CPU time of their personal computers and consumers may acquire resources for computation-intensive tasks.",
       "website": "https://golem.network/",
       "paper": "http://golemproject.net/doc/DraftGolemProjectWhitepaper.pdf",
       "github": "https://github.com/golemfactory"
    },
    "stellar": {
-     "name-person": "test",
+     "nameperson": "test",
       "description": "A platform that aims to facilitate moving currency quickly, reliably and almost no cost by connecting banks, payments systems and people through the Stellar network.",
       "website": "https://www.stellar.org/",
       "paper": "https://www.stellar.org/papers/stellar-consensus-protocol.pdf",
       "github": "https://github.com/stellar"
    },
    "cardano": {
-     "name-person": "test",
+     "nameperson": "test",
       "description": "A decentralized blockchain application that aims to develop a research-driven smart contract platform as well as the digital currency named Ada.",
       "website": "https://www.cardanohub.org/en/home/",
       "paper": "https://www.cardanohub.org/en/academic-papers/",
       "github": "https://github.com/input-output-hk/cardano-sl/"
    },
    "undefined": {
-     "name-person": "test",
+     "nameperson": "test",
       "description": "Hmmm. Though the price, circulating supply and market cap values are accurate - there doesn't appear to be any detailed data captured on this cryptocurrency. Should be updated in due time!",
       "website": "",
       "paper": "",

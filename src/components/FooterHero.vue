@@ -1,7 +1,10 @@
 <template>
   <div class="hero-foot">
     <footer class="footer">
-
+  <strong>candidato:</strong> Marcus Cunha (FrontEnd/UX) /
+  <strong>E-mail:</strong> mystrader@gmail.com |||
+  <a href="https://www.behance.net/mystrader">Portifólio </a> &
+  <a href="mystrader.com">Currículo </a>
     </footer>
   </div>
 </template>

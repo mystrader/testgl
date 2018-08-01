@@ -8,29 +8,54 @@
       </router-link>
       <div class="column is-12 image-section">
         <img :src="`/static/${selectedCryptoCurrency.id}_large_logo.png`" class="cryptoCurrency-image" :class="{'cryptoCurrency-image-iframe': isOpenedInIFrame}"/>
-        <h1 class="cryptoCurrency-title" :class="{'cryptoCurrency-title-iframe': isOpenedInIFrame}">{{ selectedCryptoCurrency.name }}</h1>
+        <h1 class="cryptoCurrency-title" :class="{'cryptoCurrency-title-iframe': isOpenedInIFrame}">{{ selectedCryptoCurrency.website }}</h1>
 
         <p class="cryptoCurrency-description" :class="{'cryptoCurrency-description-iframe': isOpenedInIFrame}">{{ selectedCryptoCurrency.description }}</p>
 
-        <button class="button" type="button" @click="toggleDropDown">
-            Confirmar Voto
-        </button>
-
+            <a class="button is-rounded is-success is-large" :class="{'hide': isOpenedInIFrame}" @click="toggleModal">
+               <i class="fas fa-check"></i>
+              <span>Vote em mim</span>
+            </a>
       </div>
 
+
+ <div class="modal" :class="{'is-active': modalActive}">
+      <div class="modal-background" @click="toggleModal"></div>
+        <div class="modal-card">
+          <header class="modal-card-head"></header>
+          <section class="modal-card-body">
+            <div class="content">
+              <h2 >Sou <strong>{{ selectedCryptoCurrency.website }}</strong> e estou muito feliz pelo seu voto</h2>
+            </div>
+            <router-link to="/" >
+            <button class="button is-danger is-rounded" >Seguir na folia</button>
+            <!-- @click="toggleModal" -->
+            </router-link>
+          </section>
+          
+        </div>
     </div>
+
+
+
+    </div>
+
+
+
+
+    
 </template>
 
 <script>
 import { store } from '../../store.js'
-
-const fiatCurrencies = [ 'AUD', 'BRL', 'CAD', 'CHF', 'CNY', 'EUR', 'GBP', 'HKD', 'IDR', 'INR', 'JPY', 'USD', 'KRW', 'MXN', 'RUB' ]
+const fiatCurrencies = [ 'Colombina', 'Arlequim', 'Pierrô', 'Capitano', 'Briguela', 'EUR', 'GBP', 'HKD', 'IDR', 'INR', 'JPY', 'USD', 'KRW', 'MXN', 'RUB' ]
 const cryptoCurrencyData = require('../../cryptocurrency-data.json')
 
 export default {
   name: 'selectedHero',
   data () {
     return {
+      modalActive: false,
       sharedState: store.state,
       selectedCryptoCurrency: {},
       fiatCurrencies: fiatCurrencies,
@@ -66,6 +91,9 @@ export default {
     }
   },
   methods: {
+    toggleModal () {
+      this.modalActive = !this.modalActive
+    },
     toggleDropDown () {
       this.dropDownOpen = !this.dropDownOpen
     },
@@ -103,6 +131,7 @@ export default {
     addImageAndDescription (cryptoCurrency) {
       cryptoCurrency.id = cryptoCurrency.id in cryptoCurrencyData ? cryptoCurrency.id : undefined
       cryptoCurrency.image = `${cryptoCurrency.id}_image`
+      cryptoCurrency.nameperson = cryptoCurrencyData[cryptoCurrency.id].nameperson
       cryptoCurrency.description = cryptoCurrencyData[cryptoCurrency.id].description
       cryptoCurrency.website = cryptoCurrencyData[cryptoCurrency.id].website
       cryptoCurrency.paper = cryptoCurrencyData[cryptoCurrency.id].paper
@@ -479,4 +508,185 @@ $large: 1024px;
     background-color: #FFF;
     -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
+
+
+.modal {
+  .modal-card {
+    border-radius: 10px;
+    max-width: 500px;
+
+     @media screen and (max-width: $medium) {
+      margin: 0px;
+    }
+
+    .modal-card-head {
+      display: block;
+      background-color: #FFF;
+      border-bottom: 0px;
+      padding-bottom: 0px;
+
+      .modal-logo {
+        height: 80px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+
+        @media screen and (max-width: $medium) {
+          height: 40px;
+        }
+      }
+
+      .modal-card-title {
+        font-size: 25px;
+        letter-spacing: 5px;
+      }
+    }
+
+    .modal-card-body {
+      font-family: Nunito, sans-serif;
+      color: #000;
+      padding: 0px 20px;
+      padding-bottom: 20px;
+
+      p {
+        font-size: 14px;
+
+        @media screen and (max-width: $medium) {
+          font-size: 12px;
+        }
+
+        a {
+          color: #fd6721;
+          font-weight: 700;
+          text-decoration: none;
+        }
+      }
+
+      h3 {
+        color: #fd6721;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      #app-logo {
+        height: 60px;
+      }
+
+      #vue-logo {
+        height: 60px;
+
+        -webkit-animation-name: spinner;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-duration: 30s;
+        animation-name: spinner;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-duration: 30s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+
+        @media screen and (max-width: $medium) {
+          height: 40px;
+        }
+      }
+
+      .is-success {
+        background-color: #fd6721;
+
+        @media screen and (max-width: $medium) {
+          display: none;
+        }
+      }
+    }
+
+    .modal-card-foot {
+      font-family: Nunito, sans-serif;
+      padding-bottom: 1px;
+      background-color: transparent;
+
+      @media screen and (max-width: $medium) {
+        padding-top: 5px;
+      }
+
+      .content {
+        color: #FFF;
+        display: block;
+        margin: 0 auto;
+
+        @media screen and (max-width: $medium) {
+          display: none;
+        }
+
+        .footer-title {
+          font-size: 15px;
+          font-weight: 400;
+        }
+
+        .footer-social-media {
+          height: 30px;
+          color: #fd6721;
+
+          .icon {
+            text-decoration: none;
+            -webkit-transform: scale(0.8);
+            -moz-transform: scale(0.8);
+            -o-transfrom: scale(0.8);
+            -webkit-transition-duration: 0.5s;
+            -moz-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            transition: 0.5s;
+
+            &:hover {
+              color: #4fc08d;
+            }
+          }
+        }
+
+        .wallet-content {
+          display: block;
+          margin: 0 auto;
+          font-size: 11px;
+
+          .wallet-tag {
+            font-weight: 600;
+            cursor: pointer;
+            margin-bottom: 0px;
+            -o-transition: .5s;
+            -ms-transition: .5s;
+            -moz-transition: .5s;
+            -webkit-transition: .5s;
+            transition: .5s;
+
+            &:hover {
+              color: #fd6721;
+            }
+          }
+
+          .wallet-id {
+            color: #00d1b2;
+          }
+        }
+      }
+    }
+  }
+
+  .modal-close {
+    background-color: #fd6721;
+
+    @media screen and (max-width: $medium) {
+      position: absolute;
+      top: 15px;
+      right: 5px;
+    }
+  }
+
+
+
+}
+
+
 </style>
