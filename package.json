@@ -1,8 +1,8 @@
 {
-  "name": "crypto_vue",
+  "name": "ProvaGloboMystrader",
   "version": "1.0.0",
-  "description": "A Vue.js project on cryptocurrency",
-  "author": "djirdehh <hassan.djirdeh@mail.utoronto.ca>",
+  "description": "Prova glob marcus cunha frontend ux",
+  "author": "mystrader.com",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
